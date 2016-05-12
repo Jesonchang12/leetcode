@@ -1,0 +1,1 @@
+select name from (select a.*, b.salary as salaryB from Employee a join Employee b on a.managerid = b.id ) c where c.salary > c.salaryB
